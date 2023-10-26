@@ -1,0 +1,1 @@
+document.getElementById("fetch").addEventListener("click",(()=>{fetch("http://localhost:3000/api/ping")}));
