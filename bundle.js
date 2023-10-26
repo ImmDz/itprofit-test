@@ -1,1 +1,1 @@
-document.getElementById("fetch").addEventListener("click",(()=>{fetch("http://localhost:9090/api/ping")}));
+document.getElementById("fetch").addEventListener("click",(()=>{fetch("https://immdz.github.io/itprofit-test/api/ping")}));
