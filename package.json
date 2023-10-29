@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "predeploy": "npm run build",
-    "deploy": "gh-pages node -d build",
+    "deploy": "gh-pages node -d build && npm run server",
     "build": "webpack --node-env=production",
     "server": "node server/index.js"
   },
@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.8.1",
     "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
     "sass": "^1.69.5",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "imask": "^7.1.3"
   }
 }
